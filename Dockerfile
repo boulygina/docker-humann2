@@ -1,5 +1,5 @@
 # Use the biobakery base image
-FROM quay.io/biocontainers/humann2:0.11.1--py27_1
+FROM ubuntu
 
 # install dependencies first
 #RUN apt-get update  && apt-get install -y \
