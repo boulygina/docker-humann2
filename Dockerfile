@@ -2,32 +2,32 @@
 FROM ubuntu
 
 # install dependencies first
-#RUN apt-get update  && apt-get install -y \
-#    build-essential \
-#    gcc-multilib \
-#    zlib1g-dev \
-#    curl \
-#    wget \
-#    cmake \
-#    python \
-#    python-pip \
-#    python-dev \
-#    python2.7-dev \
-#    python-numpy \
-#    python-matplotlib \
-#    hdf5-tools \
-#    libhdf5-dev \
-#    hdf5-helpers \
-#    libhdf5-serial-dev \
-#    libssh2-1-dev \
-#    libcurl4-openssl-dev \
-#    icu-devtools \
-#    libssl-dev \
-#    libxml2-dev \
-#    r-bioc-biobase \
-#    git \
-#    apt-utils \
-#    pigz
+RUN apt-get update  && apt-get install -y \
+    build-essential \
+    gcc-multilib \
+    zlib1g-dev \
+    curl \
+    wget \
+    cmake \
+    python \
+    python-pip \
+    python-dev \
+    python2.7-dev \
+    python-numpy \
+    python-matplotlib \
+    hdf5-tools \
+    libhdf5-dev \
+    hdf5-helpers \
+    libhdf5-serial-dev \
+    libssh2-1-dev \
+    libcurl4-openssl-dev \
+    icu-devtools \
+    libssl-dev \
+    libxml2-dev \
+    r-bioc-biobase \
+    git \
+    apt-utils \
+    pigz
 
 # Install some prerequisites
 RUN pip install boto3==1.4.7 awscli==1.11.146 argparse
